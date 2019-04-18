@@ -1,0 +1,86 @@
+.composition {
+    &2 {
+
+        width: 100vw;
+        height: 50vw;
+    }
+    &__container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+                            "picture1 picture4 picture6 picture7" 
+                            "picture1 picture4 picture6 picture7" 
+                            "picture1 picture4 picture6 picture7" 
+                            "picture1 picture4 picture6 picture7" 
+                            "picture1 picture4 picture6 picture7" 
+                            "picture1 picture4 picture6 picture7" 
+                            "picture2 picture4 picture6 picture7" 
+                            "picture2 picture4 picture8 picture8" 
+                            "picture2 picture4 picture8 picture8" 
+                            "picture2 picture4 picture8 picture8" 
+                            "picture2 picture4 picture8 picture8" 
+                            "picture2 picture5 picture8 picture8" 
+                            "picture3 picture5 picture8 picture8" 
+                            "picture3 picture5 picture8 picture8" 
+                            "picture3 picture5 picture8 picture8" 
+                            "picture3 picture5 picture8 picture8" 
+                            "picture3 picture5 picture8 picture8" 
+                            "picture3 picture5 picture8 picture8";
+        transition: all .5s cubic-bezier(.23,-0.43,.79,1.52);
+
+        & > * {
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            // &:hover {
+            //     transform: translateY(-1px) scale(1.2);
+            // }
+        }
+      }
+
+    
+    
+    &__picture1 { 
+        grid-area: picture1; 
+        background-image: url("/img/cerastium-5184.jpg");
+    }
+      
+    &__picture2 { 
+        grid-area: picture2; 
+        background-image: url("/img/gentian-3691.jpg");
+    }
+      
+    &__picture3 { 
+        grid-area: picture3; 
+        background-image: url("/img/unknown-30000.jpg");
+    }
+      
+    &__picture4 { 
+        grid-area: picture4; 
+        background-image: url("/img/header-large-1x.jpg");
+    }
+      
+    &__picture5 { 
+        grid-area: picture5;
+        background-image: url("/img/smock-7000.jpg");
+
+    }
+      
+    &__picture6 { 
+        grid-area: picture6; 
+        background-image: url("/img/tree-nursery-large.jpg");    
+    }
+      
+    &__picture7 { 
+        grid-area: picture7;
+        background-image: url("/img/picture-7-large.jpg");
+    }
+
+    &__picture8 { 
+        grid-area: picture8; 
+        background-image: url("/img/picture-8-large.jpg");
+    
+    }
+}

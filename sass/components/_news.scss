@@ -1,0 +1,58 @@
+.news {
+    text-align: center;
+    width: 100%;
+    background-color: $color-white;
+    
+    &__card {
+        position: relative;
+        width: 99%;
+        @include push--auto;
+        color: $color-grey-dark-2;
+        transition: opacity transform 2s ease;
+        
+    }
+
+    &__img {
+        @include push--auto;
+        display: block;
+        width: 100%;
+        // object-fit: cover;
+
+    }
+
+    &__text-box {
+        @include push--auto;
+        padding: 1rem;
+        background-color: rgba($color-white, .7);
+        position: absolute;
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    &__title {
+        
+        font-family: $font-family-main;
+        font-size: $font-size-title;
+        margin: 0 0 .5rem;
+    }
+
+    &__subtitle {
+        font-size: $font-size-default;
+        margin: 0 0 .5rem;
+    }
+
+    &__paragraph--card {
+        text-align: justify;
+        font-size: $font-size-default;
+        margin: .4rem;
+
+    }
+
+    &__card:hover  &__text-box {
+        opacity: 1;
+        transform: translateY(-20rem);
+    }
+    &__card:hover  &__img {
+        filter: blur(2px);
+    }
+}

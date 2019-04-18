@@ -1,0 +1,32 @@
+.latest-news {
+    background-color: $color-grey-light-2;
+    width: 100vw;
+    &__container {
+      @include push--auto;
+      width: 90%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 5% 2.5%;
+      grid-template-areas: 
+                          "news1 news2" 
+                          "news3 news4";
+    }
+      
+      &__news{
+        &--1 { 
+            grid-area: news1; 
+            
+        }
+      
+        &--2 { grid-area: news2; }
+        
+        &--3 { grid-area: news3; }
+        
+        &--4 { grid-area: news4; }
+      }
+      
+
+}
+
+    

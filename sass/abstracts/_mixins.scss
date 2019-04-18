@@ -1,0 +1,31 @@
+// block element without having to worry about if there is any top or bottom margin
+@mixin push--auto {
+    margin: { 
+        left: auto;
+        right: auto;
+    }
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+// CENTER
+
+@mixin block-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// CLEAR FIX
+@mixin clearfix {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}

@@ -1,0 +1,22 @@
+.composition {
+    position: relative;
+
+    &__img--1 {
+        display: block;
+        position: absolute;
+        top: 5rem;
+        right: 10rem;
+        
+        
+    }
+    &__img--2 {
+        display: block;
+        position: absolute;
+        height: 45rem;
+        top: 8rem;
+        left: 15rem;
+        z-index: 10;
+        // transform: rotateZ(270deg);
+        
+    }
+}
