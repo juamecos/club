@@ -1,12 +1,17 @@
 .composition {
     &2 {
 
-        width: 100vw;
+
         height: 50vw;
+        background-color: $color-grey-light-1;
+        overflow-x: hidden;
+        
     }
     &__container {
+        @include push--auto;
         height: 100%;
         display: grid;
+        max-width: 137.7rem;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: 
@@ -64,7 +69,7 @@
       
     &__picture5 { 
         grid-area: picture5;
-        background-image: url("/img/smock-7000.jpg");
+        background-image: url("/img/Muscari_neglectum-small.jpg");
 
     }
       

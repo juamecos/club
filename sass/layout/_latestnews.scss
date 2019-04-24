@@ -1,32 +1,53 @@
 .latest-news {
-    background-color: $color-grey-light-2;
-    width: 100vw;
-    &__container {
-      @include push--auto;
-      width: 90%;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-gap: 5% 2.5%;
-      grid-template-areas: 
-                          "news1 news2" 
-                          "news3 news4";
-    }
-      
-      &__news{
-        &--1 { 
-            grid-area: news1; 
-            
-        }
-      
-        &--2 { grid-area: news2; }
-        
-        &--3 { grid-area: news3; }
-        
-        &--4 { grid-area: news4; }
-      }
-      
-
+  text-align: center;
+  background-color: $color-grey-light-1;
+  padding-bottom: 15rem;
+  
+  &__wrapper {
+    display: grid;
+    max-width: 137.7rem;
+    grid-template-columns: [main-start] minmax(30rem, 66.666%) [secondary-start] 33.3333% [secondary-end];
+    grid-template-rows: [art-start] 33.3333% [art2-start] 33.3333% [art3-start] 33.3333% [art3-end];
+    grid-gap: 3%;
+    margin: 0 auto;
+    padding: 0 3%;
+    
+  }
 }
+
+.article {
+  &--1 {
+    grid-column-start: main-start;
+    grid-column-end: secondary-start;
+    grid-row-start: art-start;
+    grid-row-end: art3-end;
+  }
+  &--2 {
+    grid-column-start: secondary-start;
+    grid-row-start: art-start;
+    grid-row-end: art2-start;
+  }
+  
+  &--3 {
+    grid-column-start: secondary-start;
+    grid-row-start: art2-start;
+    grid-row-end: art3-start;
+  }
+  
+  &--4 {
+    grid-column-start: secondary-start;
+    grid-column-end: secondary-end;
+    grid-row-start: art3-start;
+    grid-row-end: art3-end;
+  }
+
+  &__container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 7%;
+  }
+}
+
 
     

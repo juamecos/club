@@ -1,58 +1,71 @@
-.news {
-    text-align: center;
-    width: 100%;
-    background-color: $color-white;
-    
-    &__card {
-        position: relative;
-        width: 99%;
-        @include push--auto;
-        color: $color-grey-dark-2;
-        transition: opacity transform 2s ease;
-        
-    }
 
-    &__img {
-        @include push--auto;
-        display: block;
-        width: 100%;
-        // object-fit: cover;
-
-    }
-
-    &__text-box {
-        @include push--auto;
-        padding: 1rem;
-        background-color: rgba($color-white, .7);
-        position: absolute;
-        opacity: 0;
-        transform: translateY(0);
-    }
+.article {
+    background-color: #e2e2e2;
+    color: $color-grey-dark-1;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
 
     &__title {
-        
-        font-family: $font-family-main;
-        font-size: $font-size-title;
-        margin: 0 0 .5rem;
+        padding: 7% 0;
+        font-size: 2.5rem;
+        color: #333;
     }
-
+  
+    &__title--1 {
+        padding: 10% 0 4% 0;
+        font-size: 3.6rem;
+    }
+    
     &__subtitle {
-        font-size: $font-size-default;
-        margin: 0 0 .5rem;
+        padding-bottom: 5%;
+        font-size: 2.2rem;
+        color: $color-grey-dark-1;
     }
+  
+    &__subtitle--1 {
+        font-size: 2.4rem;
+    }
+  
+    &__info {
+      font-size: 1.2rem;
+      display: flex;  
+      padding-bottom: 2%;
+      justify-content: flex-end;
+      }
+  
+      &__info--1 {
+          font-size: 1.5rem;
+      }
+  
+      &__author {
+          flex: 1;
+          font-weight: 700;
+      }
+  
+      &__date {
+          flex: 1;
+      }
 
-    &__paragraph--card {
+      &__img {
+          float: left;
+          width: 40%;
+          padding: .3rem 2rem 0 0;
+      }
+  
+    &__text {
+        font-size: 1.6rem;
+        line-height: 1.5;
         text-align: justify;
-        font-size: $font-size-default;
-        margin: .4rem;
+        text-justify: distribute;
+        color: #444;
 
+        &:not(last-child) {
+            padding-bottom: 2rem;
+        }
     }
-
-    &__card:hover  &__text-box {
-        opacity: 1;
-        transform: translateY(-20rem);
+  
+    &__text--1 {
+        font-size: 1.8rem;
+        line-height: 1.7;
     }
-    &__card:hover  &__img {
-        filter: blur(2px);
-    }
-}
+  }

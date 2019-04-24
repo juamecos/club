@@ -1,0 +1,175 @@
+.footer {
+    background-color: $color-primary;
+    color: $color-grey-dark-1;
+
+    &__container {
+        width: 90vw;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        font-size: 1.4rem;
+      }
+
+    &__item {
+        height: max-content;
+    }
+
+    &__mission {
+        flex: 6 2 35%;
+    }
+
+    &__paragraph {
+        padding: 1.6rem 3.2rem 0 0;
+        margin-right: 3.2rem;
+        color: $color-grey-dark-1;
+        text-align: left;
+        text-align: justify;
+    }
+    
+    &__heading {
+        padding: 0;
+        color: $color-white;
+        text-align: left;
+    }
+    
+    &__contact {
+        flex: 3 1 22.5%;
+        margin-right: 3rem;
+    }
+    
+    &__list {
+        margin-top: 1.6rem;
+        line-height: 2.5rem;
+        list-style: none;
+    
+    }
+
+    &__icon {
+        padding-bottom: 1rem;
+        padding-left: 4rem;
+        transition: all 0.2s;
+    }
+      
+    &__icon:hover {
+        transform: translateY(-2px)scale(1.1);
+        filter: invert(100%);
+    }
+
+    &__icon {
+        padding-bottom: 1rem;
+        padding-left: 4rem;
+        transition: all 0.2s;
+        z-index: 999;
+    }
+      
+    &__icon:hover {
+        transform: translateY(-2px)scale(1.1);
+        filter: invert(100%);
+    }
+
+    &__icon {
+        padding-bottom: 1rem;
+        padding-left: 4rem;
+        transition: all 0.2s;
+    }
+    
+    &__icon:hover {
+        transform: translateY(-2px)scale(1.1);
+        // filter: invert(100%);
+    }
+    &__anchor {
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        color: $color-grey-dark-1;
+    }
+      
+    &__anchor:hover {
+        color: #fff;
+    }
+    
+    &__info {
+        flex: 3 1 15%;
+    }
+    
+    &__social {
+        display: block;
+        padding-left: 3rem;
+    }
+      
+
+  } /*footer*/
+  
+ .list {
+
+     &--horizontal {
+       display: flex;
+       justify-content: center;
+       margin-bottom: 3rem;
+       list-style: none;
+       padding-top: 2rem;
+     }
+ }
+ 
+  
+  
+  
+  
+  
+  .icon__social:not(:last-child) {
+    padding-right: 3rem;
+  }
+  
+ 
+  
+  .icon__location {
+    background: url('/img/location.png') no-repeat;
+    background-position: 7px top;
+    background-size: 2rem 2rem;
+  }
+  
+  .icon__phone {
+    background: url('/img/mobile.png') no-repeat;
+    background-position: 7px top;
+    background-size: 2rem 2rem;
+  }
+  
+  .icon__email {
+    background: url('/img/envelop.png') no-repeat;
+    background-position: 7px top;
+    background-size: 2rem 2rem;
+  }
+  
+  
+  .icon__social {
+    height: 4rem;
+    margin-bottom: 1rem;
+    background-color: red;
+    color: red;
+  }
+  
+  .icon__facebook {
+    background: url('/img/facebook2.png') no-repeat;
+    background-position: 7px top;
+    background-size: 3.2rem 3.2rem;
+  }
+  
+  .icon__twitter {
+    background: url('/img/twitter.png') no-repeat;
+    background-position: 7px top;
+    background-size: 3.2rem 3.2rem;
+  }
+  
+  .icon__instagram {
+    background: url('/img/instagram.png') no-repeat;
+    background-position: 7px top;
+    background-size: 3.2rem 3.2rem;
+  }
+  
+  .icon__whatsapp {
+    background: url('/img/whatsapp.png') no-repeat;
+    background-position: 7px top;
+    background-size: 3.2rem 3.2rem;
+  }
+  
