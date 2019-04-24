@@ -242,7 +242,7 @@ body {
   -ms-grid-row-span: 6;
   -ms-grid-column: 1;
   grid-area: picture1;
-  background-image: url("img/cerastium-5184.jpg");
+  background-image: url("/img/cerastium-5184.jpg");
 }
 
 .composition__picture2 {
@@ -250,7 +250,7 @@ body {
   -ms-grid-row-span: 6;
   -ms-grid-column: 1;
   grid-area: picture2;
-  background-image: url("img/gentian-3691.jpg");
+  background-image: url("/img/gentian-3691.jpg");
 }
 
 .composition__picture3 {
@@ -258,7 +258,7 @@ body {
   -ms-grid-row-span: 6;
   -ms-grid-column: 1;
   grid-area: picture3;
-  background-image: url("img/unknown-30000.jpg");
+  background-image: url("/img/unknown-30000.jpg");
 }
 
 .composition__picture4 {
@@ -266,7 +266,7 @@ body {
   -ms-grid-row-span: 11;
   -ms-grid-column: 2;
   grid-area: picture4;
-  background-image: url("img/header-large-1x.jpg");
+  background-image: url("/img/header-large-1x.jpg");
 }
 
 .composition__picture5 {
@@ -274,7 +274,7 @@ body {
   -ms-grid-row-span: 7;
   -ms-grid-column: 2;
   grid-area: picture5;
-  background-image: url("img/Muscari_neglectum-small.jpg");
+  background-image: url("/img/Muscari_neglectum-small.jpg");
 }
 
 .composition__picture6 {
@@ -282,7 +282,7 @@ body {
   -ms-grid-row-span: 7;
   -ms-grid-column: 3;
   grid-area: picture6;
-  background-image: url("img/tree-nursery-large.jpg");
+  background-image: url("/img/tree-nursery-large.jpg");
 }
 
 .composition__picture7 {
@@ -290,7 +290,7 @@ body {
   -ms-grid-row-span: 7;
   -ms-grid-column: 4;
   grid-area: picture7;
-  background-image: url("img/picture-7-large.jpg");
+  background-image: url("/img/picture-7-large.jpg");
 }
 
 .composition__picture8 {
@@ -299,7 +299,7 @@ body {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: picture8;
-  background-image: url("img/picture-8-large.jpg");
+  background-image: url("/img/picture-8-large.jpg");
 }
 
 .section__separing {
