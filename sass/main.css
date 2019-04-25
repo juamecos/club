@@ -139,6 +139,24 @@ body {
   text-transform: uppercase;
 }
 
+@media only screen and (max-width: 75em) {
+  .heading-primary {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .heading-primary {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .heading-primary {
+    font-size: 2rem;
+  }
+}
+
 .heading-primary--left > * {
   display: block;
 }
@@ -159,6 +177,33 @@ body {
   border: 1rem solid #fff;
   letter-spacing: 1.5rem;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
+}
+
+@media only screen and (max-width: 85.375em) {
+  .heading-secondary--right {
+    padding: 12rem 5rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .heading-secondary--right {
+    padding: 8rem 2rem;
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .heading-secondary--right {
+    border: none;
+    font-size: 3rem;
+    letter-spacing: 1rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .heading-secondary--right {
+    font-size: 2rem;
+  }
 }
 
 .heading-tertiary {
@@ -223,17 +268,21 @@ body {
   display: -ms-grid;
   display: grid;
   max-width: 137.7rem;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-areas: "picture1 picture4 picture6 picture7"  "picture1 picture4 picture6 picture7"  "picture1 picture4 picture6 picture7"  "picture1 picture4 picture6 picture7"  "picture1 picture4 picture6 picture7"  "picture1 picture4 picture6 picture7"  "picture2 picture4 picture6 picture7"  "picture2 picture4 picture8 picture8"  "picture2 picture4 picture8 picture8"  "picture2 picture4 picture8 picture8"  "picture2 picture4 picture8 picture8"  "picture2 picture5 picture8 picture8"  "picture3 picture5 picture8 picture8"  "picture3 picture5 picture8 picture8"  "picture3 picture5 picture8 picture8"  "picture3 picture5 picture8 picture8"  "picture3 picture5 picture8 picture8"  "picture3 picture5 picture8 picture8";
+  gap: 2rem;
+  -ms-grid-columns: (25%)[4];
+      grid-template-columns: repeat(4, 25%);
+  -ms-grid-rows: (1fr)[18];
+      grid-template-rows: repeat(18, 1fr);
+      grid-template-areas: "picture1 picture4 picture6 picture7"  "picture1 picture4 picture6 picture7"  "picture1 picture4 picture6 picture7"  "picture1 picture4 picture6 picture7"  "picture1 picture4 picture6 picture7"  "picture1 picture4 picture6 picture7"  "picture2 picture4 picture6 picture7"  "picture2 picture4 picture8 picture8"  "picture2 picture4 picture8 picture8"  "picture2 picture4 picture8 picture8"  "picture2 picture4 picture8 picture8"  "picture2 picture5 picture8 picture8"  "picture3 picture5 picture8 picture8"  "picture3 picture5 picture8 picture8"  "picture3 picture5 picture8 picture8"  "picture3 picture5 picture8 picture8"  "picture3 picture5 picture8 picture8"  "picture3 picture5 picture8 picture8";
   -webkit-transition: all 0.5s cubic-bezier(0.23, -0.43, 0.79, 1.52);
   transition: all 0.5s cubic-bezier(0.23, -0.43, 0.79, 1.52);
 }
 
 .composition__container > * {
+  width: 100%;
+  height: 100%;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -242,7 +291,7 @@ body {
   -ms-grid-row-span: 6;
   -ms-grid-column: 1;
   grid-area: picture1;
-  background-image: url("/img/cerastium-small.jpg");
+  background-image: url("../img/cerastium-small.jpg");
 }
 
 .composition__picture2 {
@@ -250,7 +299,7 @@ body {
   -ms-grid-row-span: 6;
   -ms-grid-column: 1;
   grid-area: picture2;
-  background-image: url("/img/gentian-small.jpg");
+  background-image: url("../img/gentian-small.jpg");
 }
 
 .composition__picture3 {
@@ -258,7 +307,7 @@ body {
   -ms-grid-row-span: 6;
   -ms-grid-column: 1;
   grid-area: picture3;
-  background-image: url("/img/unknown-small.jpg");
+  background-image: url("../img/unknown-small.jpg");
 }
 
 .composition__picture4 {
@@ -266,7 +315,7 @@ body {
   -ms-grid-row-span: 11;
   -ms-grid-column: 2;
   grid-area: picture4;
-  background-image: url("/img/header-large-1x.jpg");
+  background-image: url("../img/header-large-1x.jpg");
 }
 
 .composition__picture5 {
@@ -274,7 +323,7 @@ body {
   -ms-grid-row-span: 7;
   -ms-grid-column: 2;
   grid-area: picture5;
-  background-image: url("/img/Muscari_neglectum-small.jpg");
+  background-image: url("../img/Muscari_neglectum-small.jpg");
 }
 
 .composition__picture6 {
@@ -282,7 +331,7 @@ body {
   -ms-grid-row-span: 7;
   -ms-grid-column: 3;
   grid-area: picture6;
-  background-image: url("/img/tree-nursery-large.jpg");
+  background-image: url("../img/tree-nursery-large.jpg");
 }
 
 .composition__picture7 {
@@ -290,7 +339,7 @@ body {
   -ms-grid-row-span: 7;
   -ms-grid-column: 4;
   grid-area: picture7;
-  background-image: url("/img/picture-7-large.jpg");
+  background-image: url("../img/picture-7-large.jpg");
 }
 
 .composition__picture8 {
@@ -299,17 +348,7 @@ body {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: picture8;
-  background-image: url("/img/picture-8-large.jpg");
-}
-
-.section__separing {
-  max-width: 100%;
-  padding: 15vh;
-  height: 10rem;
-  background-color: #777;
-  background-image: url("../img/sprout.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url("../img/picture-8-large.jpg");
 }
 
 .article {
@@ -392,9 +431,39 @@ body {
   line-height: 1.7;
 }
 
+.partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 75%;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.partner {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 1;
+          flex: 0 1 1;
+}
+
+.partner__icon {
+  height: 10rem;
+}
+
+.partner__text {
+  padding-top: 2rem;
+}
+
 .header {
   width: 100%;
-  height: 100vh;
+  height: auto;
   top: 0;
   left: 0;
 }
@@ -404,6 +473,13 @@ body {
   background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.5))), url("../img/header-large-2x.jpg") no-repeat top center/cover;
   background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("../img/header-large-2x.jpg") no-repeat top center/cover;
   position: relative;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header__left {
+    display: block;
+    height: 50vh;
+  }
 }
 
 .header__text-box {
@@ -418,6 +494,13 @@ body {
   background-color: #fff;
   height: 100vh;
   position: relative;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header__right {
+    display: block;
+    height: 50vh;
+  }
 }
 
 .row {
@@ -799,19 +882,19 @@ body {
 }
 
 .icon__location {
-  background: url("/img/location.png") no-repeat;
+  background: url("../img/location.png") no-repeat;
   background-position: 7px top;
   background-size: 2rem 2rem;
 }
 
 .icon__phone {
-  background: url("/img/mobile.png") no-repeat;
+  background: url("../img/mobile.png") no-repeat;
   background-position: 7px top;
   background-size: 2rem 2rem;
 }
 
 .icon__email {
-  background: url("/img/envelop.png") no-repeat;
+  background: url("../img/envelop.png") no-repeat;
   background-position: 7px top;
   background-size: 2rem 2rem;
 }
@@ -824,25 +907,25 @@ body {
 }
 
 .icon__facebook {
-  background: url("/img/facebook2.png") no-repeat;
+  background: url("../img/facebook2.png") no-repeat;
   background-position: 7px top;
   background-size: 3.2rem 3.2rem;
 }
 
 .icon__twitter {
-  background: url("/img/twitter.png") no-repeat;
+  background: url("../img/twitter.png") no-repeat;
   background-position: 7px top;
   background-size: 3.2rem 3.2rem;
 }
 
 .icon__instagram {
-  background: url("/img/instagram.png") no-repeat;
+  background: url("../img/instagram.png") no-repeat;
   background-position: 7px top;
   background-size: 3.2rem 3.2rem;
 }
 
 .icon__whatsapp {
-  background: url("/img/whatsapp.png") no-repeat;
+  background: url("../img/whatsapp.png") no-repeat;
   background-position: 7px top;
   background-size: 3.2rem 3.2rem;
 }
@@ -855,5 +938,17 @@ body {
   content: '';
   display: table;
   clear: both;
+}
+
+.section-partners {
+  max-width: 100%;
+  background-color: #7DD1C6;
+  color: #333;
+}
+
+.section-partners__container {
+  max-width: 137.7rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*# sourceMappingURL=main.css.map */

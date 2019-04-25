@@ -12,8 +12,9 @@
         height: 100%;
         display: grid;
         max-width: 137.7rem;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 2rem;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(18, 1fr);
         grid-template-areas: 
                             "picture1 picture4 picture6 picture7" 
                             "picture1 picture4 picture6 picture7" 
@@ -36,7 +37,10 @@
         transition: all .5s cubic-bezier(.23,-0.43,.79,1.52);
 
         & > * {
+            width: 100%;
+            height: 100%;
             background-size: cover;
+            background-position: center;
             background-repeat: no-repeat;
 
             // &:hover {
@@ -49,43 +53,43 @@
     
     &__picture1 { 
         grid-area: picture1; 
-        background-image: url("/img/cerastium-small.jpg");
+        background-image: url("../img/cerastium-small.jpg");
     }
       
     &__picture2 { 
         grid-area: picture2; 
-        background-image: url("/img/gentian-small.jpg");
+        background-image: url("../img/gentian-small.jpg");
     }
       
     &__picture3 { 
         grid-area: picture3; 
-        background-image: url("/img/unknown-small.jpg");
+        background-image: url("../img/unknown-small.jpg");
     }
       
     &__picture4 { 
         grid-area: picture4; 
-        background-image: url("/img/header-large-1x.jpg");
+        background-image: url("../img/header-large-1x.jpg");
     }
       
     &__picture5 { 
         grid-area: picture5;
-        background-image: url("/img/Muscari_neglectum-small.jpg");
+        background-image: url("../img/Muscari_neglectum-small.jpg");
 
     }
       
     &__picture6 { 
         grid-area: picture6; 
-        background-image: url("/img/tree-nursery-large.jpg");    
+        background-image: url("../img/tree-nursery-large.jpg");    
     }
       
     &__picture7 { 
         grid-area: picture7;
-        background-image: url("/img/picture-7-large.jpg");
+        background-image: url("../img/picture-7-large.jpg");
     }
 
     &__picture8 { 
         grid-area: picture8; 
-        background-image: url("/img/picture-8-large.jpg");
+        background-image: url("../img/picture-8-large.jpg");
     
     }
 }

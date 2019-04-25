@@ -1,0 +1,21 @@
+.partners {
+    display: flex;
+    max-width: 75%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+}
+
+.partner {
+    flex: 0 1 1;
+    
+    &__icon {
+        height: 10rem;
+    }
+
+    &__text {
+        padding-top: 2rem;
+    }
+}

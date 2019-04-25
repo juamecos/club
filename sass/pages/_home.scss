@@ -2,3 +2,15 @@
     @include clearfix;
     background-color: $color-grey-light-2;
 }
+
+.section-partners {
+    max-width: 100%;
+
+    background-color: #7DD1C6;
+    color: $color-grey-dark-1;
+
+    &__container {
+        max-width: 137.7rem;
+        @include push--auto;
+    }
+}
